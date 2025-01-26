@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1728793115464
+current_stage: None
+description: ''
+last_updated_timestamp: 1728793115464
+name: xgb-credit-risk-model
+run_id: 61815c0edeff4339bd93c8d75181a813
+run_link: ''
+source: mlflow-artifacts:/559483722190579680/61815c0edeff4339bd93c8d75181a813/artifacts/xgb_model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/559483722190579680/61815c0edeff4339bd93c8d75181a813/artifacts/xgb_model
+user_id: null
+version: 1

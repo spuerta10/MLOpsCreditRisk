@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/559483722190579680/61815c0edeff4339bd93c8d75181a813/artifacts
+end_time: 1728793021271
+entry_point_name: ''
+experiment_id: '559483722190579680'
+lifecycle_stage: active
+run_id: 61815c0edeff4339bd93c8d75181a813
+run_name: placid-sheep-845
+run_uuid: 61815c0edeff4339bd93c8d75181a813
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728793016438
+status: 3
+tags: []
+user_id: Admin

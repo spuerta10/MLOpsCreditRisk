@@ -1,0 +1,37 @@
+name: ZIP and upload to Google Cloud Storage
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+env:
+  DEV_GCS: gs://creditriskmlops-mlmodelretrain-dev
+  MAIN_GCS: gs://creditriskmlops-mlmodelretrain-prd
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Upload repos code to GitHub Actions runner
+      uses: actions/checkout@v2
+    
+    - name: Zip repos code 
+      run: zip -r mlmodelretrain.zip .
+    
+    - name: Auth to GCP
+      uses: google-github-actions/auth@v0.4.0
+      with:
+        credentials_json: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+
+    - name: Upload to dev Google Cloud Storage Bucket
+      if: github.ref == 'refs/heads/dev'
+      run: |
+        gsutil cp mlmodelretrain.zip '$DEV_GCS/mlmodelretrain.zip'
+
+    - name: Upload to prd Google Cloud Storage Bucket
+      if: github.ref == 'refs/heads/main'
+      run: |
+        gsutil cp mlmodelretrain.zip '$PRD_GCS/mlmodelretrain.zip'

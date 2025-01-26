@@ -1,0 +1,4 @@
+{
+    "mlflow_ip": "http://35.239.222.15:5000",
+    "bq_sql_query": "SELECT * EXCEPT (date) FROM `creditriskmlops.credit_risk_landing.revised-credit-risk` WHERE date BETWEEN \"{}\" AND \"{}\""
+}

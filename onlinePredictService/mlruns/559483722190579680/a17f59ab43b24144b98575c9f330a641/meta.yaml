@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/559483722190579680/a17f59ab43b24144b98575c9f330a641/artifacts
+end_time: 1728792870505
+entry_point_name: ''
+experiment_id: '559483722190579680'
+lifecycle_stage: active
+run_id: a17f59ab43b24144b98575c9f330a641
+run_name: polite-hare-421
+run_uuid: a17f59ab43b24144b98575c9f330a641
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728792870379
+status: 4
+tags: []
+user_id: Admin
